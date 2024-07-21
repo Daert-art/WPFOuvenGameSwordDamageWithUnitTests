@@ -103,7 +103,8 @@ namespace Tests1
         [Theory]
         [InlineData(0, 3)]  // ќжидаемый урон при значении Roll = 0
         [InlineData(19, 22)] // ќжидаемый урон при значении Roll = 19 (если такое значение допустимо)
-        public void CalculateDamage_InvalidRollValues(int roll, int expectedDamage)
+        public void CalculateDamage_InvalidRollValues(int roll,
+                                                      int expectedDamage)
         {
             Assert.Throws<ArgumentOutOfRangeException>(() => new SwordDamage(roll));
         }
