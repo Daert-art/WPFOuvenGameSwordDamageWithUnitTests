@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFOuvenGameSwordDamage_new_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFOuvenGameSwordDamage_new_"
+        mc:Ignorable="d"
+        Title="Sword Damage" Height="175" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="flaming" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Flaming" 
+                  Checked="flaming_Checked" Unchecked="flaming_Unchecked"></CheckBox>
+        <CheckBox x:Name="magic" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Magic" 
+                  Checked="magic_Checked" Unchecked="magic_Unchecked"></CheckBox>
+        <Button Grid.Row="1" Grid.ColumnSpan="2" Content="Roll for damage" Margin="25,12,25,12" Click="Button_Click"></Button>
+        <TextBlock x:Name="damage" Grid.Row="2" Grid.ColumnSpan="2" Text="damage" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+    </Grid>
+</Window>
